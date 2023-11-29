@@ -1,0 +1,127 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200vh;
+    height: 100vh;
+}
+.container0::before
+{
+    content: "";
+    background: url("./assets/background.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.container0
+{
+    display: flex;
+    flex-direction: column;
+}
+.container0 h1
+{
+    width: 525px;
+    margin: 0px auto 80px auto;
+    font-family: 'Montserrat Alternates';
+    font-size: 70px;
+    text-align: center;
+}
+.container
+{
+    width: 600px;
+    display: flex;
+}
+.operator
+{
+    width: 50px;
+    transition: all 0.4s;
+}
+.operator img
+{
+    width: 50px;
+    transition: all .4s;
+}
+.operator img:hover
+{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    transform: scale(1.2);
+}
+.numbers
+{
+    width: 273px;
+    display: grid;
+    grid-template-areas:
+    'img img img'
+    'img img img'
+    'img img img'
+    'img img img';
+    transition: all 0.4s;
+}
+.numbers img:hover
+{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    transform: scale(1.2);
+}
+.numbers img
+{
+    width: 50px;
+    transition: all .3s;
+}
+.display
+{
+    width: 278px;
+}
+.display p
+{
+    background-color: aliceblue;
+    width: 200px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0px 0px 0px 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result
+{
+    margin: 65px 0px 0px 75px;
+}
+.btncontainer
+{
+    display: flex;
+}
+.display button
+{
+    margin: 30px 0px 30px 75px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #62075d;
+    border-color:#3b0438;
+    transition: all 0.3s;
+    font-family: 'Montserrat Alternates';
+}
+.display button:hover
+{
+    color: #fff;
+    border-color: #440441;
+    background-color: #991693;
+    transform: scale(1.05);
+}
+footer
+{
+    width: 155px;
+    font-family: 'Montserrat Alternates';
+    text-align: center;
+    margin: 240px auto 0px auto;
+}

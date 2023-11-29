@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat+Alternates:ital,wght@0,200;0,300;0,500;1,300&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container0">
+        <h1 class="heading">
+            CALCULATOR
+        </h1>
+        <div class="container">
+            <div class="numbers">
+                <img src="./assets/1.png" onclick="fun('1')" alt="1">
+                <img src="./assets/2.png" onclick="fun('2')" alt="2">
+                <img src="./assets/3.png" onclick="fun('3')" alt="3">
+                <img src="./assets/4.png" onclick="fun('4')" alt="4">
+                <img src="./assets/5.png" onclick="fun('5')" alt="5">
+                <img src="./assets/6.png" onclick="fun('6')" alt="6">
+                <img src="./assets/7.png" onclick="fun('7')" alt="7">
+                <img src="./assets/8.png" onclick="fun('8')" alt="8">
+                <img src="./assets/9.png" onclick="fun('9')" alt="9">
+                <div class="extra"></div>
+                <img src="./assets/0.png" onclick="fun('0')" alt="0">
+                <div class="extra">
+                    <img src="./assets/backspace.png" alt="backspace" onclick="backspace()">
+                </div>
+    
+            </div>
+            <div class="operator">
+                <img src="./assets/add+.png" onclick="fun('+')" alt="add">
+                <img src="./assets/subtract.png" onclick="fun('-')" alt="subtract">
+                <img src="./assets/multiply.png" onclick="fun('*')" alt="multiply">
+                <img src="./assets/divide.png" onclick="fun('/')" alt="divide">
+            </div>
+            <div class="display">
+                <p id="display"></p>
+                <div class="btncontainer">
+                    <button class="btn" onclick="displayResult()">calculate</button>
+                    <button class="btn" onclick="clearAll()">clear</button>
+                </div>
+                <p id="result"></p>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; aSc
+        </footer>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
