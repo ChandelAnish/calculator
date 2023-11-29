@@ -35,6 +35,10 @@ body
     width: 600px;
     display: flex;
 }
+.numandoper
+{
+    display: flex;
+}
 .operator
 {
     width: 50px;
