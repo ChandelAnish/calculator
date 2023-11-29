@@ -21,6 +21,22 @@ function checkOperator(st)
     }
     return true;
 }
+//fn to check negative number
+function checkNegativeNumber(st)
+{
+    if(st[0]=='-')
+    {
+        for(let i=1;i<st.length;i++)
+        {
+            if(st[i]=='+' || st[i]=='-'|| st[i]=='*'|| st[i]=='/')
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    return false;
+}
 //fn to perform operation between 2 numbers
 function calculateTwo(s,operator,j,k)
 {
@@ -112,6 +128,10 @@ function displayResult()
     {
             let operator=bodmas(s);
             s=calculateTwo(s,operator,j,k);
+            if(checkNegativeNumber(s))
+            {
+                break;
+            }
     }
     document.getElementById("result").innerHTML=s;
 }
